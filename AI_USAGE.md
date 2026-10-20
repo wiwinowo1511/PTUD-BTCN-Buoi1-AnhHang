@@ -48,6 +48,5 @@ AI đã cung cấp một bộ code HTML/CSS khá hoàn chỉnh với bố cục 
 
 ## 6. Phần tôi hiểu và có thể giải thích
 - **Biến CSS (`:root`):** Em đã hiểu cách tạo các biến màu sắc (`--brand-green`, `--brand-red`) để dễ dàng tái sử dụng và thay đổi màu sắc toàn trang web
-- **`.purchase-actions` (Grid):** Sử dụng `display: grid; grid-template-columns: 1fr 1fr;` để chia đều 2 nút mua hàng thành 2 cột bằng nhau
 - **`.btn--buy` vs `.btn--cart`:** Tạo class riêng cho từng nút để nút Mua ngay có màu nền đỏ (`background: var(--brand-red)`), còn nút Thêm vào giỏ hàng có nền trắng viền xanh
 - **Cách gắn file css link vào html để định dạng cho nội dung trên trang html**
