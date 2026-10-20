@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trang chi tiết sản phẩm chăm sóc da - giao diện minh họa Hasaki.">
+  <title>Kem dưỡng ẩm phục hồi da | Hasaki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-strip">
+    <span>Ưu đãi làm đẹp mỗi ngày · Giao hàng toàn quốc</span>
+    <a href="tel:18006324">Hotline: 1800 6324 (miễn phí)</a>
+  </div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Hasaki - trang chủ">
+      <img src="assets/hasaki-logo.jpg" alt="Hasaki - Sản phẩm chính hãng">
+    </a>
+    <form class="search" role="search" onsubmit="event.preventDefault(); showToast('Đây là ô tìm kiếm minh họa.');">
+      <label class="sr-only" for="search-input">Tìm kiếm sản phẩm</label>
+      <input id="search-input" type="search" placeholder="Tìm mỹ phẩm, thương hiệu..." />
+      <button type="submit">Tìm kiếm</button>
+    </form>
+    <nav class="header-actions" aria-label="Tài khoản và giỏ hàng">
+      <a class="header-link" href="#store-stock">Hệ thống cửa hàng</a>
+      <a class="header-link" href="#qa">Hỏi đáp</a>
+      <a class="header-action" href="#login" id="login-link">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+        <span>Đăng nhập</span>
+      </a>
+      <a class="header-action header-action--cart" href="#cart" id="cart-link" aria-label="Giỏ hàng, 0 sản phẩm">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.5l2.2 11h10.6l2-8H6.4"/><circle cx="9.5" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></svg>
+        <span>Giỏ hàng</span>
+        <b class="cart-count" id="cart-count" aria-hidden="true">0</b>
+      </a>
+    </nav>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Đường dẫn">
+    <a href="#">Trang chủ</a><span>›</span><a href="#">Chăm sóc da</a><span>›</span><a href="#">Dưỡng ẩm</a><span>›</span><span>Kem dưỡng ẩm phục hồi da</span>
+  </nav>
+
+  <main class="page-layout">
+    <div class="main-column">
+      <section class="product-card" aria-labelledby="product-title">
+        <div class="product-gallery">
+          <div class="product-badges"><span class="badge sale">-20%</span><span class="badge official">Chính hãng</span></div>
+          <img class="product-image" src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85" alt="Sản phẩm kem dưỡng da trong hũ" onerror="this.style.display='none';this.nextElementSibling.hidden=false;">
+          <div class="image-fallback" hidden>Hình ảnh sản phẩm minh họa</div>
+          <div class="thumbnail-row"><span class="thumb active">Ảnh 1</span><span class="thumb">Ảnh 2</span><span class="thumb">Ảnh 3</span></div>
+        </div>
+        <div class="product-info">
+          <p class="eyebrow">CHĂM SÓC DA · DƯỠNG ẨM</p>
+          <h1 id="product-title">Kem dưỡng ẩm phục hồi da</h1>
+          <p class="product-code">Mã sản phẩm: <strong>SP-MH001</strong> <span class="stock-pill">● Còn hàng</span></p>
+          <div class="rating-line"><span class="stars" aria-label="5 trên 5 sao">★★★★★</span><a href="#reviews">4.8 (126 đánh giá)</a><span class="muted">|</span><a href="#qa">12 câu hỏi</a></div>
+          <div class="price-block"><span class="current-price">249.000₫</span><del>312.000₫</del><span class="discount">Tiết kiệm 63.000₫</span></div>
+          <p class="tax-note">Giá minh họa cho bài tập, không phải giá bán thực tế.</p>
+
+          <div class="gift-box"><span class="gift-icon">🎁</span><div><strong>Quà tặng kèm</strong><p>Tặng túi minisize chăm sóc da khi mua sản phẩm (minh họa).</p></div></div>
+
+          <div class="benefits">
+            <div><span class="benefit-icon">🚚</span><p><strong>Miễn phí vận chuyển</strong><small>Áp dụng theo điều kiện đơn hàng</small></p></div>
+            <div><span class="benefit-icon">✓</span><p><strong>Cam kết chính hãng</strong><small>Chính sách đền bù theo điều khoản</small></p></div>
+            <div><span class="benefit-icon">↺</span><p><strong>Hỗ trợ đổi trả</strong><small>Theo chính sách áp dụng</small></p></div>
+          </div>
+
+          <div class="variant-area">
+            <span class="field-label">Dung tích / phân loại</span>
+            <div class="variant-options"><button class="variant selected" type="button" aria-pressed="true">50 ml</button><button class="variant" type="button" aria-pressed="false">100 ml</button></div>
+          </div>
+          <div class="quantity-area"><label for="quantity">Số lượng</label><div class="quantity-control"><button type="button" class="qty-btn" data-step="-1" aria-label="Giảm số lượng">−</button><input id="quantity" type="number" min="1" max="99" value="1"><button type="button" class="qty-btn" data-step="1" aria-label="Tăng số lượng">+</button></div><span class="muted small">Tối đa 99 sản phẩm</span></div>
+
+          <div class="purchase-actions">
+            <button class="btn btn--cart" id="add-to-cart" type="button"><span aria-hidden="true">🛒</span> Thêm vào giỏ hàng</button>
+            <button class="btn btn--buy" id="buy-now" type="button"><span aria-hidden="true">⚡</span> MUA NGAY</button>
+          </div>
+          <p class="action-message" id="action-message" role="status" aria-live="polite"></p>
+          <p class="secure-note">Thông tin sản phẩm và ưu đãi trên trang này là dữ liệu minh họa.</p>
+        </div>
+      </section>
+
+      <section class="content-card" id="description">
+        <div class="section-heading"><h2>Mô tả sản phẩm</h2><span class="heading-line"></span></div>
+        <p>Kem dưỡng ẩm phục hồi da là sản phẩm mẫu dùng để minh họa bố cục trang thương mại điện tử. Nội dung công dụng dưới đây không đại diện cho một sản phẩm có thật.</p>
+        <ul class="check-list"><li>Hỗ trợ bổ sung độ ẩm cho da.</li><li>Kết cấu kem dễ tán, phù hợp đưa vào phần mô tả kết cấu.</li><li>Có thể sử dụng như bước dưỡng ẩm trong quy trình chăm sóc da.</li></ul>
+        <h3>Thành phần nổi bật</h3>
+        <div class="ingredient-grid"><div><strong>Hyaluronic Acid</strong><span>Thành phần hút ẩm thường gặp trong mỹ phẩm.</span></div><div><strong>Ceramide</strong><span>Thành phần hỗ trợ hàng rào bảo vệ da.</span></div><div><strong>Panthenol</strong><span>Thành phần thường dùng trong sản phẩm chăm sóc da.</span></div></div>
+        <h3>Hướng dẫn sử dụng</h3>
+        <ol class="usage-list"><li>Làm sạch da và dùng các bước dưỡng trước đó nếu có.</li><li>Lấy lượng kem vừa đủ, thoa đều lên da.</li><li>Sử dụng theo hướng dẫn trên bao bì của sản phẩm thực tế.</li></ol>
+        <p class="notice">Lưu ý: hãy thay phần mô tả, thành phần và hướng dẫn bằng thông tin được xác nhận từ nhà sản xuất trước khi dùng cho sản phẩm thật.</p>
+      </section>
+
+      <section class="content-card" id="specifications">
+        <div class="section-heading"><h2>Thông số sản phẩm</h2><span class="heading-line"></span></div>
+        <dl class="spec-list"><div><dt>Danh mục</dt><dd>Kem dưỡng ẩm</dd></div><div><dt>Thương hiệu</dt><dd>Minh họa</dd></div><div><dt>Dung tích</dt><dd>50 ml</dd></div><div><dt>Loại da</dt><dd>Cần xác nhận theo sản phẩm thực tế</dd></div><div><dt>Xuất xứ</dt><dd>Chưa cung cấp</dd></div><div><dt>Hạn sử dụng</dt><dd>Xem trên bao bì</dd></div></dl>
+      </section>
+
+      <section class="content-card" id="store-stock">
+        <div class="section-heading"><h2>Tình trạng tại chi nhánh</h2><span class="heading-line"></span></div>
+        <p class="muted">Dữ liệu cửa hàng bên dưới chỉ là ví dụ tĩnh, không phản ánh tồn kho thực tế.</p>
+        <div class="store-list"><div class="store-row"><div><strong>Hasaki - Quận 1</strong><span>TP. Hồ Chí Minh</span></div><span class="store-available">Còn hàng (minh họa)</span></div><div class="store-row"><div><strong>Hasaki - Bình Thạnh</strong><span>TP. Hồ Chí Minh</span></div><span class="store-available">Còn hàng (minh họa)</span></div><div class="store-row"><div><strong>Hasaki - Cầu Giấy</strong><span>Hà Nội</span></div><span class="store-limited">Sắp hết (minh họa)</span></div></div>
+      </section>
+
+      <section class="content-card" id="reviews">
+        <div class="section-heading"><h2>Đánh giá sản phẩm</h2><span class="heading-line"></span></div>
+        <div class="review-summary"><div class="review-score"><strong>4.8</strong><span class="stars">★★★★★</span><small>126 đánh giá (minh họa)</small></div><div class="review-bars"><div><span>5 sao</span><span class="bar"><i style="width:82%"></i></span><span>82%</span></div><div><span>4 sao</span><span class="bar"><i style="width:13%"></i></span><span>13%</span></div><div><span>3 sao</span><span class="bar"><i style="width:5%"></i></span><span>5%</span></div></div></div>
+        <article class="review"><div class="review-avatar">M</div><div><strong>Minh Anh <span class="verified">✓ Đã mua (minh họa)</span></strong><div class="stars">★★★★★</div><p>Bố cục đánh giá mẫu để trình bày cách khách hàng nhận xét về sản phẩm.</p></div></article>
+        <article class="review"><div class="review-avatar">L</div><div><strong>Lan N. <span class="verified">✓ Đã mua (minh họa)</span></strong><div class="stars">★★★★☆</div><p>Có thể bổ sung hình ảnh thật và đánh giá đã được xác minh khi có dữ liệu.</p></div></article>
+      </section>
+
+      <section class="content-card" id="qa">
+        <div class="section-heading"><h2>Hỏi đáp về sản phẩm</h2><span class="heading-line"></span></div>
+        <details open><summary>Sản phẩm phù hợp với loại da nào?</summary><p>Đây là nội dung mẫu. Hãy đối chiếu hướng dẫn và thông tin từ nhà sản xuất trước khi trả lời khách hàng.</p></details>
+        <details><summary>Có thể dùng sản phẩm vào buổi sáng không?</summary><p>Thực hiện theo hướng dẫn trên bao bì và quy trình chăm sóc da phù hợp.</p></details>
+        <details><summary>Làm sao kiểm tra hạn sử dụng?</summary><p>Kiểm tra thông tin in trên bao bì hoặc liên hệ bộ phận chăm sóc khách hàng.</p></details>
+      </section>
+    </div>
+
+    <aside class="recommendations" aria-labelledby="recommend-title">
+      <div class="recommend-header"><h2 id="recommend-title">Có thể bạn thích</h2><span>Gợi ý sản phẩm</span></div>
+      <article class="recommend-card"><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=400&q=80" alt="Sản phẩm chăm sóc da minh họa"><div><span class="recommend-tag">Dưỡng ẩm</span><h3>Gel dưỡng ẩm dịu nhẹ</h3><div class="stars">★★★★★ <span class="muted">(89)</span></div><strong class="recommend-price">189.000₫</strong><button type="button" class="mini-btn" data-product="Gel dưỡng ẩm dịu nhẹ">Xem sản phẩm</button></div></article>
+      <article class="recommend-card"><img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=400&q=80" alt="Chai serum minh họa"><div><span class="recommend-tag">Serum</span><h3>Serum cấp ẩm</h3><div class="stars">★★★★☆ <span class="muted">(54)</span></div><strong class="recommend-price">219.000₫</strong><button type="button" class="mini-btn" data-product="Serum cấp ẩm">Xem sản phẩm</button></div></article>
+      <article class="recommend-card"><img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=400&q=80" alt="Sản phẩm làm sạch minh họa"><div><span class="recommend-tag">Làm sạch</span><h3>Sữa rửa mặt dịu nhẹ</h3><div class="stars">★★★★★ <span class="muted">(102)</span></div><strong class="recommend-price">159.000₫</strong><button type="button" class="mini-btn" data-product="Sữa rửa mặt dịu nhẹ">Xem sản phẩm</button></div></article>
+      <div class="help-card"><strong>Cần hỗ trợ chọn sản phẩm?</strong><p>Đọc kỹ thông tin hoặc liên hệ tư vấn viên trước khi mua.</p><a href="#qa">Xem câu hỏi thường gặp →</a></div>
+    </aside>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <section class="footer-col footer-about" aria-labelledby="ft-contact">
+        <h2 id="ft-contact">Thông tin liên hệ</h2>
+        <address>
+          <p><span aria-hidden="true">📞</span> Hotline: <a href="tel:18006324">1800 6324</a> (miễn phí)</p>
+          <p><span aria-hidden="true">✉️</span> Email: <a href="mailto:hotro@hasaki.vn">hotro@hasaki.vn</a></p>
+          <p><span aria-hidden="true">📍</span> Trụ sở: [Địa chỉ công ty - cần cập nhật], TP. Hồ Chí Minh</p>
+          <p><span aria-hidden="true">🕘</span> Giờ làm việc: 8:00 - 21:30 mỗi ngày</p>
+        </address>
+        <div class="footer-logo"><img src="assets/hasaki-logo.jpg" alt="Hasaki"></div>
+      </section>
+
+      <nav class="footer-col" aria-labelledby="ft-policy">
+        <h2 id="ft-policy">Chính sách</h2>
+        <ul><li><a href="#">Chính sách đổi trả &amp; hoàn tiền</a></li><li><a href="#">Chính sách bảo mật thông tin</a></li><li><a href="#">Chính sách vận chuyển</a></li><li><a href="#">Chính sách thanh toán</a></li><li><a href="#">Chính sách kiểm hàng</a></li><li><a href="#">Điều khoản sử dụng</a></li></ul>
+      </nav>
+
+      <nav class="footer-col" aria-labelledby="ft-support">
+        <h2 id="ft-support">Hỗ trợ khách hàng</h2>
+        <ul><li><a href="#">Hướng dẫn mua hàng</a></li><li><a href="#">Tra cứu đơn hàng</a></li><li><a href="#">Câu hỏi thường gặp</a></li><li><a href="#">Chương trình thành viên</a></li><li><a href="#">Tuyển dụng</a></li><li><a href="#">Về Hasaki</a></li></ul>
+      </nav>
+
+      <section class="footer-col" aria-labelledby="ft-cert">
+        <h2 id="ft-cert">Chứng nhận &amp; thanh toán</h2>
+        <div class="cert-row">
+          <a class="cert-badge" href="#" aria-label="Đã thông báo Bộ Công Thương (hình minh họa)">
+            <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="#1f5fb0"/><path d="M12 20.5l5.5 5.5L28.5 14.5" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>ĐÃ THÔNG BÁO</strong><small>Bộ Công Thương</small></span>
+          </a>
+          <div class="cert-badge cert-badge--green">
+            <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><path d="M20 3l14 5v10c0 9-6 16-14 19C12 34 6 27 6 18V8z" fill="#2f6f55"/><path d="M13 20l5 5 9-10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span><strong>CHÍNH HÃNG</strong><small>Cam kết 100%</small></span>
+          </div>
+        </div>
+        <p class="footer-label">Phương thức thanh toán</p>
+        <ul class="pay-list" aria-label="Phương thức thanh toán">
+          <li>COD</li><li>Visa</li><li>Mastercard</li><li>MoMo</li><li>ZaloPay</li><li>Chuyển khoản</li>
+        </ul>
+        <p class="footer-label">Kết nối với chúng tôi</p>
+        <ul class="social-list">
+          <li><a href="#" aria-label="Facebook">f</a></li>
+          <li><a href="#" aria-label="YouTube">▶</a></li>
+          <li><a href="#" aria-label="TikTok">♪</a></li>
+          <li><a href="#" aria-label="Zalo">Z</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Hasaki. Giao diện học tập HTML5 &amp; CSS3 · Không liên kết hệ thống bán hàng thật.</p>
+      <p>Tên doanh nghiệp, mã số thuế, địa chỉ, số hotline và huy hiệu Bộ Công Thương là nội dung giữ chỗ - cần thay bằng thông tin chính thức trước khi công bố.</p>
+    </div>
+  </footer>
+  <div class="mobile-purchase-bar"><span><small>Giá minh họa</small><strong>249.000₫</strong></span><button type="button" class="btn btn--cart" id="mobile-cart">Giỏ hàng</button><button type="button" class="btn btn--buy" id="mobile-buy">Mua ngay</button></div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const quantityInput = document.getElementById('quantity');
+    const message = document.getElementById('action-message');
+
+    document.querySelectorAll('.qty-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const step = Number(button.dataset.step);
+        const current = Number(quantityInput.value) || 1;
+        quantityInput.value = Math.min(99, Math.max(1, current + step));
+      });
+    });
+
+    document.querySelectorAll('.variant').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.variant').forEach(item => {
+          item.classList.remove('selected');
+          item.setAttribute('aria-pressed', 'false');
+        });
+        button.classList.add('selected');
+        button.setAttribute('aria-pressed', 'true');
+        message.textContent = 'Đã chọn phân loại ' + button.textContent + ' (minh họa).';
+      });
+    });
+
+    const cartCount = document.getElementById('cart-count');
+    const cartLink = document.getElementById('cart-link');
+    const toast = document.getElementById('toast');
+    let cartTotal = 0, toastTimer;
+
+    function showToast(text) {
+      toast.textContent = text;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 3200);
+    }
+    function addToCart(qty) {
+      cartTotal = Math.min(999, cartTotal + qty);
+      cartCount.textContent = cartTotal;
+      cartCount.classList.add('has-items');
+      cartLink.setAttribute('aria-label', 'Giỏ hàng, ' + cartTotal + ' sản phẩm');
+    }
+    document.getElementById('login-link').addEventListener('click', e => { e.preventDefault(); showToast('Chức năng Đăng nhập chỉ là mô phỏng giao diện.'); });
+    cartLink.addEventListener('click', e => { e.preventDefault(); showToast('Giỏ hàng hiện có ' + cartTotal + ' sản phẩm (mô phỏng).'); });
+    document.querySelectorAll('.footer-col a[href="#"], .social-list a, .cert-badge[href]').forEach(a => a.addEventListener('click', e => e.preventDefault()));
+
+    function showAction(text) {
+      const quantity = Math.min(99, Math.max(1, Number(quantityInput.value) || 1));
+      quantityInput.value = quantity;
+      message.textContent = text + ' · Số lượng: ' + quantity + '. Đây chỉ là mô phỏng giao diện, chưa có chức năng đặt hàng thật.';
+    }
+    document.getElementById('add-to-cart').addEventListener('click', () => { showAction('Đã thêm sản phẩm vào giỏ hàng (mô phỏng)'); addToCart(Number(quantityInput.value)); });
+    document.getElementById('buy-now').addEventListener('click', () => showAction('Bạn đã chọn Mua ngay (mô phỏng)'));
+    document.getElementById('mobile-cart').addEventListener('click', () => { showAction('Đã thêm sản phẩm vào giỏ hàng (mô phỏng)'); addToCart(Number(quantityInput.value)); });
+    document.getElementById('mobile-buy').addEventListener('click', () => showAction('Bạn đã chọn Mua ngay (mô phỏng)'));
+    document.querySelectorAll('.mini-btn').forEach(button => button.addEventListener('click', () => {
+      message.textContent = 'Bạn đã chọn xem: ' + button.dataset.product + ' (nội dung minh họa).';
+      document.getElementById('product-title').scrollIntoView({behavior:'smooth', block:'start'});
+    }));
+  </script>
+</body>
+</html>
