@@ -2,6 +2,7 @@
 
 ## 1. Giới thiệu
 Bài tập cải tiến giao diện trang chi tiết sản phẩm của website thương mại điện tử Hasaki.vn bằng HTML5 và CSS3. Khu vực được chọn để cải tiến là cụm nút thao tác mua hàng (Thêm vào giỏ hàng và Mua ngay) nhằm giải quyết vấn đề nhầm lẫn cho người dùng.
+**Link xem giao diện website trực tiếp (GitHub Pages):** https://wiwinowo1511.github.io/PTUD-BTCN-Buoi1-AnhHang/
 
 ## 2. Website tham khảo
 - Tên website: Hasaki.vn
